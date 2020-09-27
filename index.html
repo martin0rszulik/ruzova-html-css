@@ -2,23 +2,129 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Page Not Found</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-   
-  </style>
+    <meta charset="utf-8">
+    <title>Page Not Found</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        /*
+        |-------------------------------
+        |   Here I setup new font for our blog, its from google sites that has MANY of them, name of font is = Lato
+        |-------------------------------
+        */
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap');
+
+        html {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            background-color: azure;
+        }
+
+        /*
+        |-------------------------------
+        |   Here I setup our Header
+        |-------------------------------
+        */
+        header {
+            font-size: 3rem;
+            /* 1rem is equal to FONT-SIZE, which is now 16px. So 3rem = (3 * 16 = 48px) */
+
+            font-weight: bold;
+
+            text-align: center;
+
+            margin: 3rem;
+            /* margin is space OUTSIDE <header> on all sides (top, right, bottom, left) */
+        }
+
+        header nav {
+            display: inline;
+            /* here I just say to display everything inside <nav> next to each other, normaly its everything on new line*/
+        }
+
+        header nav a {
+            margin: 0.5rem;
+
+            color: pink;
+
+            text-transform: uppercase;
+
+            text-decoration: none;
+            /* we dont want to have these ugly underline on our profile link ;-) */
+            
+            font-size: 1.3rem;
+        }
+
+        /* a:hover means that when we hover over our link, it will do this CSS */
+        header nav a:hover {
+            transition: 0.5s;
+
+            color: hotpink;
+        }
+
+        /*
+        |-------------------------------
+        |   Here I setup our Main tag, here we will have our Articles ( blog posts )
+        |-------------------------------
+        */
+        main {
+            margin-left: 2.5rem;
+            margin-right: 2.5rem;
+        }
+
+        /*
+        |-------------------------------
+        |   Here I setup look of Article
+        |-------------------------------
+        */
+        article {
+            background-color: white;
+
+            border: 3px solid pink;
+            /* we setup a border of our Article to be 3px, solid line ( no like -------) and pink color*/
+            border-radius: 20px;
+
+            padding: 1.5rem;
+            /* padding is space INSIDE <article> on all sides (top, right, bottom, left) */
+
+        }
+
+        article h1 {
+            font-size: 2rem;
+            margin: 0;
+        }
+
+        article p {
+            font-size: 1.2rem;
+            
+            text-align: justify;
+        }
+
+    </style>
 </head>
 
 <body>
-  <h1>This is page from Honey & Bunny </h1>
-    <a href="https://www.instagram.com/stories/highlights/18069027172210120/">HoneyBunny</a>
-    <a href="https://www.seznam.cz">seznam.cz</a>
-<<<<<<< HEAD
-  <p>My bunny is best beautifle </p>
-=======
-  <p>Write something here</p>
->>>>>>> master
+    <header>
+        Honney & Bunny blog site
+        <br>
+        <nav>
+            <a href="https://www.instagram.com/martin0rszulik">
+                honey
+            </a>
+            <a href="https://www.instagram.com/le0nad">
+                bunny
+            </a>
+        </nav>
+    </header>
+    
+    <main>
+        <article>
+            <h1>Honey first blog post</h1>
+            <p>
+                I love you soo soo soo soo soo soo soo soo soo soo soo soo nad ležatá osmička soo much :-*
+            </p>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTMaoTGjyxUpEx9Rz000MgZ1nWhr1osbxAC6w&usqp=CAU"/>
+        </article>
+    </main>
 </body>
 
 </html>
